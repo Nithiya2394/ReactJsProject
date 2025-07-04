@@ -1,0 +1,43 @@
+{
+    "authScreen": {
+      "loginTitle": "Login",
+      "Subtitle": "Please provide your user name",
+      "UserName": "User name",
+      "Password": "Password",
+      "ForgotPassword" : "Forgot password?",
+      "ForgotPasswordTitle": "ForgotPassword",
+      "ForgotPasswordSubtitle": "Please enter your email id",
+      "EmailId" : "Email id",
+      "nextButton": "Next",
+      "otpInstruction" : "Please enter the 6-digit OTP code",
+      "otpFromEmail": "Sent to",
+      "submitOTPButton": "Submit",
+      "changePasswordTitle" : "Change Password",
+      "changePasswordSubTitle":"Please enter your password",
+      "newpassword":"New password",
+      "confirmPassword":"Confirm password",
+      "PasswordChangedSuccessfull": "Password Changed Successfully",
+      "passwordRules": {
+        "minLength": "✅ Minimum 8 characters",
+        "uppercase": "✅ At least one uppercase letter",
+        "lowercase": "✅ At least one lowercase letter",
+        "number": "✅ At least one number",
+        "specialChar": "✅ At least one special character"
+      }          
+    },
+    "navBar": {
+      "home": "Home",
+      "portfolio": "Portfolio",
+      "account": "Account",
+      "accountInformation": "Account Information",
+      "nomineeDetails": "Nominee details",
+      "createMPIN": "Create MPIN",
+      "netWorthCertificate": "Net worth  certificate",
+      "report": "Report",
+      "faq": "FAQs",
+      "help": "Help & Support",
+      "referYourFriends": "Refer your friends",
+      "settings": "Settings",
+      "languageSettings": "Language Settings"
+    }
+  }

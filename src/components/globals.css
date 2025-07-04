@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Quicksand", sans-serif;
+    font-size: 16px;
+    scroll-behavior: smooth;
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      overflow: auto;
+      height: '100vh';
+    }
+  }
+  
+  button {
+    all: unset;
+    cursor: pointer;
+  }
+  
+  [role="button"] {
+    cursor: pointer;
+  }
+  
+  @font-face {
+    font-family: "Quicksand";
+    src: url("../assets/fonts/Quicksand-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Quicksand";
+    src: url("../assets/fonts/Quicksand-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Quicksand";
+    src: url("../assets/fonts/Quicksand-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Quicksand";
+    src: url("../assets/fonts/Quicksand-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Quicksand";
+    src: url("../assets/fonts/Quicksand-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .d-flex {
+    display: flex;
+  }
+  
+  .justify-content-end {
+    justify-content: flex-end;
+  }
+  
+  .align-items-end {
+    align-items: end;
+  }
+  
+  .justify-content-between {
+    justify-content: space-between;
+  }
+  
+  .toast {
+    background-color: #fff;
+    color: #1d2123;
+  }
+  
+  .toast-success {
+    border-left: 5px solid #00b96b;
+    border-right: 5px solid #00b96b;
+  }
+  
+  .toast-error {
+    border-left: 5px solid #d93025;
+    border-right: 5px solid #d93025;
+  }
+  
+  .toast-info {
+    border-left: 5px solid #2f6890;
+    border-right: 5px solid #2f6890;
+  }
+  
+  .toast-success.Toastify__toast svg {
+    fill: #00b96b;
+  }
+  
+  .toast-error.Toastify__toast svg {
+    fill: #d93025;
+  }
+  
+  .toast-info.Toastify__toast svg {
+    fill: #2f6890;
+  }
+  
+  .w-100 {
+    width: 100%;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #CAD7E0;
+    border-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #6E91A9;
+    border-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #2F6890;
+  }
+  
+  
