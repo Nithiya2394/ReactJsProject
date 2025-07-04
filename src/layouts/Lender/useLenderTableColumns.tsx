@@ -6,20 +6,22 @@ import { IconButton } from '@mui/material';
 import { LenderImages } from '@/assets/images/lender';
 import Image from 'next/image';
 
- const useLenderTableColumns = (): TableColumn<Lender>[] => {
+const useLenderTableColumns = (): TableColumn<Lender>[] => {
   const handleViewClick = useCallback((row: Lender) => {
     console.log(row);
   }, []);
-
   const lenderColumns: TableColumn<Lender>[] = useMemo(
     () => [
       {
         key: 'lenderId',
         label: 'Lender ID',
         sortable: true,
-        render: (value) => (
-          <a href="#" style={{ color: '#1A8EB8', textDecoration: 'underline', fontWeight: 500 }}>
-            {value as string}
+        render: (value: unknown) => (
+          <a
+            href="#"
+            style={{ color: '#1A8EB8', textDecoration: 'underline', fontWeight: 500 }}
+          >
+            {String(value)}
           </a>
         ),
       },
@@ -27,7 +29,7 @@ import Image from 'next/image';
         key: 'dateOfOnboarding',
         label: 'Date of onboarding',
         sortable: true,
-        render: (value) => formatDate(value as string),
+        render: (value: unknown) => formatDate(String(value)),
       },
       {
         key: 'name',
@@ -36,13 +38,13 @@ import Image from 'next/image';
       {
         key: 'mobileNumber',
         label: 'Mobile Number',
-        render: (value) => formatMobileNumber(value as string),
+        render: (value: unknown) => formatMobileNumber(String(value)),
       },
       {
         key: 'status',
         label: 'Status',
-        render: (value) => {
-          const status = (value as string).toLowerCase();
+        render: (value: unknown) => {
+          const status = String(value).toLowerCase();
           const keywords = ['Completed', 'Pending'];
           const found = keywords
             .slice()
@@ -58,13 +60,13 @@ import Image from 'next/image';
       {
         key: 'investedAmount',
         label: 'Invested Amount',
-        render: (value) =>
+        render: (value: unknown) =>
           `₹${Number(value).toLocaleString('en-IN')}`,
       },
       {
         key: 'action',
         label: 'Action',
-        render: (_value, row) => (
+        render: (_value: unknown, row: Lender) => (
           <IconButton
             onClick={() => handleViewClick(row)}
             sx={{
@@ -88,6 +90,7 @@ import Image from 'next/image';
     ],
     [handleViewClick]
   );
-   return lenderColumns;
+
+  return lenderColumns;
 };
 export default useLenderTableColumns;
