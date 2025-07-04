@@ -1,4 +1,4 @@
-import { DialogModal } from '../Dialog';
+import { DialogModal } from '../../components/Dialog';
 import { useTranslation } from 'react-i18next';
 import { AuthBoxText, AuthButton, PasswordHintBox, PasswordHintText, StyledTextField, TypographySubText } from './AuthComponents';
 
